@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+}
+
+:root {
+    --color-orange: #ff4500;
+    --color-gray: #ccc;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-blue: #1d374e;
+    --color-news-button: #6c757d;
+    --color-light-gold: #cc8529;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* section-1 */
+.main-section .main-background {
+    background-color: var(--color-gray);
+    background-size: cover;
+    padding: 40px;
+    margin: 50px 40px;
+}
+
+
+
+.main-section h1 {
+    font-size: 40px;
+    color: var(--color-black);
+    margin-bottom: 10px;
+}
+
+.main-background .flex-items p {
+    font-size: 20px;
+    color: var(--color-blue);
+}
+
+.main-section button {
+    font-weight: 600;
+    margin-top: 20px;
+    border: none;
+    width: 135px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--color-orange);
+    color: var(--color-black);
+}
+.main-background .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-section button:hover {
+    color: var(--color-white);
+    background-color: var(--color-news-button);
+}
+
+
+/* section-2 */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+    padding-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-heading {
+    padding: 5px 10px 10px 10px;
+}
+
+.card-heading p {
+    font-size: 15px;
+}
+
+.card-heading h4 {
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: var(--color-light-gold);
+    font-weight: 600;
+}
+
+.card-heading a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.card-heading a i {
+    padding-left: 5px;
+}
+
+.card-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 20px
+}
+
+/* section-3 */
+.items {
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.item {
+    box-shadow: 0 8px 8px 0 rgb(52 48 52 / 20%);
+    background-color: var(--color-gray);
+    margin: 10px;
+    padding: 10px;
+}
+
+.item h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-blue);
+}
+
+.item .img {
+    width: 200px;
+}
+
+/* section-4 */
+.content {
+    margin: 30px 30px 10px;
+}
+
+.content .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.flex-header {
+    color: #1d374e;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.flex-header p {
+    font-size: 20px;
+}
+
+.list-items h3 {
+    color: var(--color-light-gold);
+}
+
+.right-image {
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.list-items {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+}
+
+.right-image {
+    width: 100%;
+}
+
+/* section-5 */
+.error-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    list-style: none;
+    margin: 0 40px;
+    grid-gap: 30px
+}
+
+.error-item li {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--color-gray);
+    padding: 20px;
+}
+
+.error-item li h3 {
+    color: var(--color-light-gold)
+}
+
+.error-item .error-image {
+    width: 80px;
+    height: 80px;
+}
+
+/* section-6 */
+.newsletter {
+    background-color: var(--color-gray);
+    display: grid;
+    place-items: center;
+    padding: 30px
+}
+
+.newsletter h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.newsletter h6 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--color-blue)
+}
+
+.input {
+    position: relative;
+}
+
+.newsletter input {
+    width: 300px;
+    padding: 10px;
+}
+
+.newsletter button {
+    color: var(--color-white);
+    background-color: var(--color-news-button);
+    border: 0;
+    padding: 5px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+/* section-7 */
+.links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.links h1 {
+    font-size: 35px;
+    margin: 0 0 20px 0
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.icons {
+    font-size: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* section-8 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 60px;
+    padding-bottom: 10px;
+}
+
+.grid-container .grid-items {
+    padding: 20px 10px;
+}
+
+.grid-container .grid-items h4 {
+    font-size: 20px;
+    color: var(--color-blue)
+}
+
+.grid-container .grid-items a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.grid-items p {
+    margin-bottom: 20px;
+}
+
+/* Medium devices (landscape tablets, 992px) */
+@media only screen and (min-width:601px) and (max-width: 992px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 30px;
+    }
+
+    .flex-items button {
+        margin-left: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main-section .main-background {
+        margin: 50px 20px;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .flex-items {
+        margin-bottom: 10px;
+    }
+
+    .card-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 50px 0;
+    }
+
+    .card-container {
+        margin-bottom: 15px;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+    }
+
+    .content {
+        margin: 10px 20px;
+    }
+
+    .flex-header {
+        text-align: center;
+    }
+
+    .main-background .flex-container .flex-items {
+        text-align: center;
+    }
+
+    .items .item,
+    .links h1 {
+        text-align: center;
+    }
+
+    .error-item {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .grid-items {
+        grid-template-columns: 1fr;
+        margin: 10px;
+        grid-gap: 10px;
+    }
+
+    .newsletter h1,
+    .newsletter h6 {
+        text-align: center;
+    }
+
+    .newsletter input {
+        width: 250px;
+    }
+
+    .links a {
+        margin: 10px;
+    }
+}
